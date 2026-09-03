@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMIC - YouTube</title>
+    <link rel="stylesheet" href="youtube.css">
+</head>
+<body>
+    <!-- Header with Channel Info -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="channel-brand">
+                    <div class="logo">
+                        <img src="FB_IMG_1711193957328.JPG" alt="Akachukwu Ibegbu">
+                    </div>
+                    <div class="channel-info">
+                        <h1>AK D MIC TV</h1>
+                        <div class="channel-stats">
+                            <span>134 subscribers</span>
+                            <span>•</span>
+                            <span>34 videos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <a href="index.html" class="home-btn">HOME</a>
+                    <button class="subscribe-btn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Channel Banner -->
+    <section class="channel-banner">
+        <div class="container">
+            <div class="hero-content">
+                <img src="cover page.JPG" alt="Channel Banner" class="banner-image">
+                <h2>Welcome to DMIC Channel</h2>
+                <p>Creating amazing content since 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="channel-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">PLAYLISTS</a></li>
+                <li><a href="#popular playlists">COMMUNITY</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured Video Section -->
+        <section class="featured-video">
+            <h2 class="section-title">Featured Video</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h3>My Best Video Ever - You Won't Believe What Happened!</h3>
+                <p>56K views • 3 days ago</p>
+                <p>This is the description of your featured video. Tell viewers what makes this video special and why they should watch it.</p>
+            </div>
+        </section>
+
+        <!-- Recent Uploads -->
+        <section class="recent-uploads">
+            <h2 class="section-title">Recent Uploads</h2>
+            <div class="video-grid">
+                <!-- Video 1 -->
+                <div class="video-card" onclick="openVideo('dQw4w9WgXcQ')">
+                    <div class="thumbnail">
+                        <img src="Thrones message (3).jpg" alt="Video thumbnail">
+                        <span class="duration">12:34</span>
+                    </div>
+                    <div class="video-card-info">
+                        <h3>Amazing Tutorial Part 1</h3>
+                        <p>32K views • 1 week ago</p>
+                    </div>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="video-card" onclick="openVideo('jNQXAC9IVRw')">
+                    <div class="thumbnail">
+                        <img src="Thrones message (3).jpg" alt="Video thumbnail">
+                        <span class="duration">8:56</span>
+                    </div>
+                    <div class="video-card-info">
+                        <h3>My Daily Vlog - Adventure Time!</h3>
+                        <p>18K views • 2 weeks ago</p>
+                    </div>
+                </div>
+                
+                <!-- Video 3 -->
+                <div class="video-card" onclick="openVideo('9bZkp7q19f0')">
+                    <div class="thumbnail">
+                        <img src="https://via.placeholder.com/320x180/333/fff?text=Video+3" alt="Video thumbnail">
+                        <span class="duration">15:22</span>
+                    </div>
+                    <div class="video-card-info">
+                        <h3>Product Review - Is It Worth It?</h3>
+                        <p>45K views • 3 weeks ago</p>
+                    </div>
+                </div>
+                
+                <!-- Video 4 -->
+                <div class="video-card" onclick="openVideo('kJQP7kiw5Fk')">
+                    <div class="thumbnail">
+                        <img src="https://via.placeholder.com/320x180/333/fff?text=Video+4" alt="Video thumbnail">
+                        <span class="duration">22:15</span>
+                    </div>
+                    <div class="video-card-info">
+                        <h3>Behind The Scenes - How I Make Videos</h3>
+                        <p>29K views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="view-more-btn">VIEW MORE</a>
+            </div>
+        </section>
+
+        <!-- Popular Playlists -->
+        <section class="playlists">
+            <h2 class="section-title">Popular Playlists</h2>
+            <div class="playlist-grid">
+                <!-- Playlist 1 -->
+                <div class="playlist-card" onclick="openPlaylist('PLrAXtmRdnEQy4wGf6YCSGvt-9qIaHoA7V')">
+                    <div class="playlist-thumbnail">
+                        <img src="https://via.placeholder.com/320x180/333/fff?text=Tutorials" alt="Playlist thumbnail">
+                        <div class="playlist-overlay">
+                            <span>12 videos</span>
+                            <span class="playlist-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Tutorial Series</h3>
+                        <p>Complete guide for beginners to advanced</p>
+                    </div>
+                </div>
+                
+                <!-- Playlist 2 -->
+                <div class="playlist-card" onclick="openPlaylist('PLrAXtmRdnEQy5CgK-4tDeEjiQ4xVD_72R')">
+                    <div class="playlist-thumbnail">
+                        <img src="https://via.placeholder.com/320x180/333/fff?text=Vlogs" alt="Playlist thumbnail">
+                        <div class="playlist-overlay">
+                            <span>8 videos</span>
+                            <span class="playlist-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Weekly Vlogs</h3>
+                        <p>Join me on my weekly adventures</p>
+                    </div>
+                </div>
+                
+                <!-- Playlist 3 -->
+                <div class="playlist-card" onclick="openPlaylist('PLrAXtmRdnEQxNd4g_4vDm1-h4F3tHK2Vi')">
+                    <div class="playlist-thumbnail">
+                        <img src="https://via.placeholder.com/320x180/333/fff?text=Reviews" alt="Playlist thumbnail">
+                        <div class="playlist-overlay">
+                            <span>5 videos</span>
+                            <span class="playlist-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="playlist-info">
+                        <h3>Product Reviews</h3>
+                        <p>Honest reviews of popular products</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">D<span>MIC</span></div>
+                <p>Thank you for visiting my channel. Let's connect!</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DMIC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to open YouTube video in new tab
+        function openVideo(videoId) {
+            window.open(`https://youtu.be/${videoId}`, '_blank');
+        }
+
+        // Function to open YouTube playlist in new tab
+        function openPlaylist(playlistId) {
+            window.open(`https://www.youtube.com/playlist?list=${playlistId}`, '_blank');
+        }
+
+        // Subscribe button functionality
+        document.querySelector('.subscribe-btn').addEventListener('click', function() {
+            window.open('https://www.youtube.com/@AkachukwuIbegbu', '_blank');
+        });
+
+        // Mobile menu toggle (if you add mobile menu later)
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

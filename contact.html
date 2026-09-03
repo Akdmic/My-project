@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - D MIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="FB_IMG_1711193957328.JPG" alt="Your Logo">
+                D<span>Mic</span>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Youtube page.html">Youtube</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>gideonibegbu@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 (0) 81442-01963</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lagos, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <img src="/api/placeholder/600/300" alt="Map Location">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+                        <div class="input-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name" class="input-label">Your Name</label>
+                            <div class="error-text" id="nameError">Please enter your name</div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email" class="input-label">Your Email</label>
+                            <div class="error-text" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="text" id="subject" placeholder=" ">
+                            <label for="subject" class="input-label">Subject</label>
+                        </div>
+                        
+                        <div class="input-group">
+                            <textarea id="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message" class="input-label">Your Message</label>
+                            <div class="error-text" id="messageError">Please enter your message</div>
+                        </div>
+                        
+                        <button type="submit" class="btn" id="submitBtn">
+                            Send Message
+                            <i class="fas fa-paper-plane btn-icon"></i>
+                            <span class="loading" id="submitLoading"></span>
+                        </button>
+                        
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i> Your message has been sent successfully! I'll get back to you soon.
+                        </div>
+                        
+                        <div class="error-message" id="errorMessage">
+                            <i class="fas fa-exclamation-circle"></i> There was an error sending your message. Please try again.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Ak<span>D mic</span></div>
+                <p>Thank you for visiting my website. Let's connect!</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 YourName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+        
+        // Form validation and submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitLoading = document.getElementById('submitLoading');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        
+        // Input elements
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        
+        // Error messages
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const messageError = document.getElementById('messageError');
+        
+        // Validate email format
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        // Show error for an input
+        function showError(input, errorElement) {
+            input.classList.add('input-error');
+            errorElement.style.display = 'block';
+        }
+        
+        // Hide error for an input
+        function hideError(input, errorElement) {
+            input.classList.remove('input-error');
+            errorElement.style.display = 'none';
+        }
+        
+        // Validate form inputs
+        function validateForm() {
+            let isValid = true;
+            
+            // Validate name
+            if (nameInput.value.trim() === '') {
+                showError(nameInput, nameError);
+                isValid = false;
+            } else {
+                hideError(nameInput, nameError);
+            }
+            
+            // Validate email
+            if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value.trim())) {
+                showError(emailInput, emailError);
+                isValid = false;
+            } else {
+                hideError(emailInput, emailError);
+            }
+            
+            // Validate message
+            if (messageInput.value.trim() === '') {
+                showError(messageInput, messageError);
+                isValid = false;
+            } else {
+                hideError(messageInput, messageError);
+            }
+            
+            return isValid;
+        }
+        
+        // Event listeners for input fields to clear errors on input
+        nameInput.addEventListener('input', () => hideError(nameInput, nameError));
+        emailInput.addEventListener('input', () => hideError(emailInput, emailError));
+        messageInput.addEventListener('input', () => hideError(messageInput, messageError));
+        
+        // Form submission
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Hide any previous messages
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+            
+            // Validate form
+            if (!validateForm()) {
+                return;
+            }
+            
+            // Show loading indicator
+            submitBtn.disabled = true;
+            submitLoading.style.display = 'inline-block';
+            
+            // Simulate form submission (replace with actual form submission)
+            setTimeout(() => {
+                // Hide loading indicator
+                submitLoading.style.display = 'none';
+                submitBtn.disabled = false;
+                
+                // Show success message (in real scenario, this would happen after API response)
+                successMessage.style.display = 'block';
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 1500);
+        });
+        
+        // Interactive elements for contact icons
+        const contactItems = document.querySelectorAll('.contact-item');
+        
+        contactItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const icon = item.querySelector('.icon-container i');
+                icon.classList.add('fa-beat');
+                
+                setTimeout(() => {
+                    icon.classList.remove('fa-beat');
+                }, 800);
+            });
+        });
+        
+        // Social icons animation
+        const socialIcons = document.querySelectorAll('.social-icon');
+        
+        socialIcons.forEach(icon => {
+            icon.addEventListener('mouseenter', () => {
+                const iconElement = icon.querySelector('i');
+                iconElement.classList.add('fa-bounce');
+                
+                setTimeout(() => {
+                    iconElement.classList.remove('fa-bounce');
+                }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
