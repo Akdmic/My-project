@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About D Mic - Akachukwu Ibegbu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="FB_IMG_1711193957328.JPG" alt="D Mic Logo">
+                D<span>Mic</span>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="Youtube page.html">Youtube</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!-- Slides -->
+                        <div class="slideshow-slide active">
+                            <img src="FB_IMG_1711193957328.jpg" alt="Akachukwu Ibegbu">
+                        </div>
+                        
+                        <div class="slideshow-slide">
+                            <img src="IMG_2636.jpg" alt="Akachukwu Ibegbu 2">
+                        </div>
+                        
+                        <div class="slideshow-slide">
+                            <img src="me.jpg" alt="Akachukwu Ibegbu 3">
+                        </div>
+                        
+                        <!-- Navigation arrows -->
+                        <a class="slideshow-prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="slideshow-next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    
+                    <!-- Dots/circles -->
+                    <div class="slideshow-dots">
+                        <span class="slideshow-dot active" onclick="currentSlide(0)"></span>
+                        <span class="slideshow-dot" onclick="currentSlide(1)"></span>
+                        <span class="slideshow-dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Who is D Mic</h3>
+                    <p>Hi there! I'm Akachukwu Ibegbu, a multifaceted professional passionate about cybersecurity, event hosting, and spiritual leadership. Based in Lagos, Nigeria, I'm driven by a mission to empower the next generation through technology, communication, and faith.</p>
+                    
+                    <p>With 5 years of experience in hosting and event management, I've developed a unique ability to connect with audiences and create memorable experiences. My background in cybersecurity brings an analytical and strategic approach to everything I do, whether it's securing digital systems or crafting compelling narratives.</p>
+                    
+                    <p>Beyond my professional pursuits, I'm dedicated to building a generation of young people who are passionate, purposeful, and spiritually grounded. My love for public speaking, animation, and 3D modeling allows me to express creativity and communicate complex ideas in engaging ways.</p>
+                </div>
+            </div>
+
+            <!-- Personal Highlights -->
+            <div class="personal-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Cybersecurity</h4>
+                    <p>Expert in digital security and ethical hacking</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-microphone"></i>
+                    <h4>Event Hosting</h4>
+                    <p>5+ years of professional hosting experience</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-church"></i>
+                    <h4>Spiritual Leadership</h4>
+                    <p>Passionate about youth spiritual development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Ak<span>D mic</span></div>
+                <p>Thank you for visiting my website. Let's connect!</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">GitHub</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 YourName. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="slideshow.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
